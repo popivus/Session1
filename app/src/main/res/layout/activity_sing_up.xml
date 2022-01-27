@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SingUpActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sing_in_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/main_font"
+            android:textSize="14sp"
+            android:text="@string/name"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/nameReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/main_font"
+            android:textSize="14sp"
+            android:text="@string/email"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="17dp"/>
+
+        <EditText
+            android:id="@+id/emailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:textSize="20sp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/main_font"
+            android:textSize="14sp"
+            android:text="@string/password"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="17dp"/>
+
+        <EditText
+            android:id="@+id/passwordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:textSize="20sp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/main_font"
+            android:textSize="14sp"
+            android:text="@string/confirm_password"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="17dp"/>
+
+        <EditText
+            android:id="@+id/repasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:textSize="20sp"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/singUpBtn"
+        android:layout_width="126dp"
+        android:layout_height="55dp"
+        style="@style/ButtonMain"
+        android:text="@string/sing_up"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintBottom_toTopOf="@id/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="126dp"
+        android:layout_height="55dp"
+        android:text="@string/cancel"
+        style="@style/ButtonMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
