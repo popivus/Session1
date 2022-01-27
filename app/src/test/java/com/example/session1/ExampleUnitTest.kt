@@ -1,5 +1,8 @@
 package com.example.session1
 
+import android.content.Intent
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -11,7 +14,10 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun registrationAccepted() {
+        val auth: FirebaseAuth = FirebaseAuth.getInstance()
+        auth.createUserWithEmailAndPassword("example123@gmail.com", "123456789").addOnCompleteListener { task ->
+            assertEquals(true, task.isSuccessful)
+        }
     }
 }

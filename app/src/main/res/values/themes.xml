@@ -23,4 +23,12 @@
         <item name="fontFamily">@font/main_font</item>
     </style>
 
+    <style name="ButtonSecondary">
+        <item name="android:background">@drawable/button_secondary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="fontFamily">@font/main_font</item>
+    </style>
+
 </resources>

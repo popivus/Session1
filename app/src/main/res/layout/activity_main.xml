@@ -64,11 +64,13 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text"
             android:textSize="20sp"
-            android:padding="7dp"/>
+            android:padding="7dp"
+            android:inputType="textPassword"/>
 
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/googleAuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/google_logo"
